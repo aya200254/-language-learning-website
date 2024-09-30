@@ -1,0 +1,37 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="margin-left:110px; font-weight:bold">Language  Website </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/quiz/english">Quiz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/results">Results</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+  </div>
+
+</nav> -->
+
+<div class="container text-center" style="margin-top: 200px;">
+  <h1>Welcome to the Language Quiz</h1>
+  <p>Select a language to begin:</p>
+  <div class="btn-group" role="group" aria-label="Language selection">
+    <button *ngFor="let lang of languages" class="btn btn-primary" (click)="selectLanguage(lang)">
+      {{ lang }}
+    </button>
+  </div>
+</div>
